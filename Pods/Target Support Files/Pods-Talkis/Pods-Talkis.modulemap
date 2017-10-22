@@ -1,0 +1,6 @@
+framework module Pods_Talkis {
+  umbrella header "Pods-Talkis-umbrella.h"
+
+  export *
+  module * { export * }
+}

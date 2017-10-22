@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53978CF6FF5A00EABE1E18E /* Pods_Talkis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E2CC091F0E6233F1AC07D7 /* Pods_Talkis.framework */; };
 		F44F8EBB1F917252008AD25B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44F8EBA1F917252008AD25B /* AppDelegate.swift */; };
 		F44F8EBD1F917252008AD25B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44F8EBC1F917252008AD25B /* ViewController.swift */; };
 		F44F8EC01F917252008AD25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44F8EBE1F917252008AD25B /* Main.storyboard */; };
@@ -15,6 +16,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48BF8AA3C08BCD6EFD029E80 /* Pods-Talkis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talkis.release.xcconfig"; path = "Pods/Target Support Files/Pods-Talkis/Pods-Talkis.release.xcconfig"; sourceTree = "<group>"; };
+		70EA7CE4AA96599453C5B375 /* Pods-Talkis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talkis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Talkis/Pods-Talkis.debug.xcconfig"; sourceTree = "<group>"; };
+		77E2CC091F0E6233F1AC07D7 /* Pods_Talkis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talkis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42C08D81F9C986A0057A3FB /* Talkis-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Talkis-Bridging-Header.h"; sourceTree = "<group>"; };
+		F42C08D91F9C986B0057A3FB /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F42C08DA1F9C986B0057A3FB /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F44F8EB71F917252008AD25B /* Talkis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44F8EBA1F917252008AD25B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44F8EBC1F917252008AD25B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +36,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53978CF6FF5A00EABE1E18E /* Pods_Talkis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B10E3B554AC8C23EB4518BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70EA7CE4AA96599453C5B375 /* Pods-Talkis.debug.xcconfig */,
+				48BF8AA3C08BCD6EFD029E80 /* Pods-Talkis.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88354051ECCD8307EBD06BB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77E2CC091F0E6233F1AC07D7 /* Pods_Talkis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F42C08D71F9C98030057A3FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F42C08D91F9C986B0057A3FB /* SWRevealViewController.h */,
+				F42C08DA1F9C986B0057A3FB /* SWRevealViewController.m */,
+				F42C08D81F9C986A0057A3FB /* Talkis-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F44F8EAE1F917252008AD25B = {
 			isa = PBXGroup;
 			children = (
 				F44F8EB91F917252008AD25B /* Talkis */,
 				F44F8EB81F917252008AD25B /* Products */,
+				4B10E3B554AC8C23EB4518BC /* Pods */,
+				88354051ECCD8307EBD06BB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +91,7 @@
 		F44F8EB91F917252008AD25B /* Talkis */ = {
 			isa = PBXGroup;
 			children = (
+				F42C08D71F9C98030057A3FB /* Supporting Files */,
 				F44F8EBA1F917252008AD25B /* AppDelegate.swift */,
 				F44F8EBC1F917252008AD25B /* ViewController.swift */,
 				F44F8EBE1F917252008AD25B /* Main.storyboard */,
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F44F8EC91F917252008AD25B /* Build configuration list for PBXNativeTarget "Talkis" */;
 			buildPhases = (
+				1DC13F06C14CE059991A1B78 /* [CP] Check Pods Manifest.lock */,
 				F44F8EB31F917252008AD25B /* Sources */,
 				F44F8EB41F917252008AD25B /* Frameworks */,
 				F44F8EB51F917252008AD25B /* Resources */,
+				34EA4976B86BE90BC66C4A56 /* [CP] Embed Pods Frameworks */,
+				B46834206EDD4F8307EC4DF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					F44F8EB61F917252008AD25B = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DC13F06C14CE059991A1B78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		34EA4976B86BE90BC66C4A56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Talkis/Pods-Talkis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B46834206EDD4F8307EC4DF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Talkis/Pods-Talkis-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F44F8EB31F917252008AD25B /* Sources */ = {
@@ -272,14 +362,18 @@
 		};
 		F44F8ECA1F917252008AD25B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70EA7CE4AA96599453C5B375 /* Pods-Talkis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CKURCPC7GF;
 				INFOPLIST_FILE = Talkis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.bcc.Talkis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Talkis/Supporting Files/Talkis-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +381,17 @@
 		};
 		F44F8ECB1F917252008AD25B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48BF8AA3C08BCD6EFD029E80 /* Pods-Talkis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CKURCPC7GF;
 				INFOPLIST_FILE = Talkis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.bcc.Talkis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Talkis/Supporting Files/Talkis-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
