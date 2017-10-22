@@ -16,5 +16,8 @@ class CreateAccountVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func closeButtonDidTap(_ sender: Any) {
+        performSegue(withIdentifier: UNWIND_TO_CHANNEL, sender: nil)
+    }
+    
 }
