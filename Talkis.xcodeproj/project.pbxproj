@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A53978CF6FF5A00EABE1E18E /* Pods_Talkis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E2CC091F0E6233F1AC07D7 /* Pods_Talkis.framework */; };
+		F42C08DF1F9C9D740057A3FB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C08DE1F9C9D740057A3FB /* ChatVC.swift */; };
+		F42C08E11F9C9D890057A3FB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C08E01F9C9D890057A3FB /* ChannelVC.swift */; };
+		F42C08E31F9CB2410057A3FB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42C08DA1F9C986B0057A3FB /* SWRevealViewController.m */; };
 		F44F8EBB1F917252008AD25B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44F8EBA1F917252008AD25B /* AppDelegate.swift */; };
-		F44F8EBD1F917252008AD25B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44F8EBC1F917252008AD25B /* ViewController.swift */; };
 		F44F8EC01F917252008AD25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44F8EBE1F917252008AD25B /* Main.storyboard */; };
 		F44F8EC21F917252008AD25B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44F8EC11F917252008AD25B /* Assets.xcassets */; };
 		F44F8EC51F917252008AD25B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44F8EC31F917252008AD25B /* LaunchScreen.storyboard */; };
@@ -22,9 +24,10 @@
 		F42C08D81F9C986A0057A3FB /* Talkis-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Talkis-Bridging-Header.h"; sourceTree = "<group>"; };
 		F42C08D91F9C986B0057A3FB /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F42C08DA1F9C986B0057A3FB /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F42C08DE1F9C9D740057A3FB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		F42C08E01F9C9D890057A3FB /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		F44F8EB71F917252008AD25B /* Talkis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44F8EBA1F917252008AD25B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F44F8EBC1F917252008AD25B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F44F8EBF1F917252008AD25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F44F8EC11F917252008AD25B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44F8EC41F917252008AD25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +73,29 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F42C08DB1F9C9C890057A3FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F42C08DC1F9C9C8D0057A3FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F42C08DD1F9C9C980057A3FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F42C08DE1F9C9D740057A3FB /* ChatVC.swift */,
+				F42C08E01F9C9D890057A3FB /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F44F8EAE1F917252008AD25B = {
 			isa = PBXGroup;
 			children = (
@@ -91,9 +117,11 @@
 		F44F8EB91F917252008AD25B /* Talkis */ = {
 			isa = PBXGroup;
 			children = (
+				F42C08DD1F9C9C980057A3FB /* Controller */,
+				F42C08DC1F9C9C8D0057A3FB /* Views */,
+				F42C08DB1F9C9C890057A3FB /* Model */,
 				F42C08D71F9C98030057A3FB /* Supporting Files */,
 				F44F8EBA1F917252008AD25B /* AppDelegate.swift */,
-				F44F8EBC1F917252008AD25B /* ViewController.swift */,
 				F44F8EBE1F917252008AD25B /* Main.storyboard */,
 				F44F8EC11F917252008AD25B /* Assets.xcassets */,
 				F44F8EC31F917252008AD25B /* LaunchScreen.storyboard */,
@@ -226,7 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44F8EBD1F917252008AD25B /* ViewController.swift in Sources */,
+				F42C08E31F9CB2410057A3FB /* SWRevealViewController.m in Sources */,
+				F42C08DF1F9C9D740057A3FB /* ChatVC.swift in Sources */,
+				F42C08E11F9C9D890057A3FB /* ChannelVC.swift in Sources */,
 				F44F8EBB1F917252008AD25B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
