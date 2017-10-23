@@ -8,7 +8,19 @@
 
 import Foundation
 
+typealias CompletionHandler = (_ success: Bool) -> ()
+
+//URLConstants
+let BASE_URL = "https://talkischat.herokuapp.com/v1/"
+let URL_REGISTER = "\(BASE_URL)account/register"
+
 //Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND_TO_CHANNEL = "unwindToChannel"
+
+//User Defaults
+let TOKEN_KEY = "userToken"
+let LOGGED_IN_KEY = "loggenInKey"
+let USER_EMAIL = "userEmail"
+
