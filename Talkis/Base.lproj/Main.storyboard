@@ -234,7 +234,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-Fm-srL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWf-Fm-srL" customClass="RoundedButton" customModule="Talkis" customModuleProvider="target">
                                 <rect key="frame" x="54" y="284" width="267" height="30"/>
                                 <color key="backgroundColor" red="0.33359098619999999" green="0.65104871809999998" blue="0.90284974090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Login">
@@ -370,7 +370,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtM-BD-AQn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtM-BD-AQn" customClass="RoundedButton" customModule="Talkis" customModuleProvider="target">
                                 <rect key="frame" x="54" y="593" width="267" height="40"/>
                                 <color key="backgroundColor" red="0.33359098619999999" green="0.65104871809999998" blue="0.90284974090000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -379,6 +379,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountDidTap:" destination="WNV-7k-kbi" eventType="touchUpInside" id="ABo-Zk-uct"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blc-1Q-Axj">
                                 <rect key="frame" x="86.5" y="130" width="202" height="27.5"/>
@@ -399,7 +402,9 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
                                 <state key="normal" title="Chooser avatar"/>
                                 <connections>
+                                    <action selector="chooseAvatarDidTap:" destination="WNV-7k-kbi" eventType="touchUpInside" id="jG7-t6-PQE"/>
                                     <action selector="createAccountDidTap:" destination="lF8-5L-OwI" eventType="touchUpInside" id="VDK-Wp-dhK"/>
+                                    <action selector="generateAvatarDidTap:" destination="WNV-7k-kbi" eventType="touchUpInside" id="YR2-uv-OTj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="gUl-u7-pDP">
@@ -434,6 +439,10 @@
                         <viewLayoutGuide key="safeArea" id="707-1N-4i4"/>
                     </view>
                     <connections>
+                        <outlet property="emailText" destination="nQJ-we-jCW" id="80w-dA-Pc9"/>
+                        <outlet property="passwordText" destination="xgk-HF-kcy" id="kVU-O0-lTh"/>
+                        <outlet property="userImage" destination="gUl-u7-pDP" id="zpo-Jj-S9r"/>
+                        <outlet property="usernameText" destination="zkq-9C-RNd" id="XRS-Ap-fhV"/>
                         <segue destination="N9e-jc-FaT" kind="unwind" identifier="unwindToChannel" unwindAction="preparefForUnwindWithSegue:" id="edH-V3-Mt0"/>
                     </connections>
                 </viewController>
